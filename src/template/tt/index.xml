@@ -1,0 +1,158 @@
+<VanGogh compatible-sdk="1.0.0">
+    <BizInfo biz="bytedance.toutiao.shortvideo" template-engine="mustache" template-create="UTC 2019/01/14 13:10:00"/>
+        <Style type="text/css" theme="default">
+            {
+                "wrap": {
+                    "width": "100%",
+                    "height": "100%",
+                    "background-color": "#000000",
+                    "alpha": 0.9
+                },
+                "flex-column": {
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "align-items":"center"
+                },
+                "flex-row": {
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "align-items": "center"
+                },
+                "content": {
+                    "width": "100%",
+                    "justify-content": "flex-start"
+                },
+                "header": {
+                    "width": "100%",
+                    "height": 44,
+                    "flex-basis": "auto",
+                    "flex-grow": 0,
+                    "flex-shrink": 0,
+                    "justify-content": "flex-start"
+                },
+                "quitIcon": {
+                    "width": 24,
+                    "height": 24,
+                    "margin-left": 15
+                },
+                "infoWrap": {
+                    "width": "100%",
+                    "height": "100%",
+                    "flex-basis": "auto",
+                    "flex-grow": 0,
+                    "flex-shrink": 1
+                },
+                "noneUp": {
+                    "width": "100%",
+                    "flex-grow": 1,
+                    "flex-shrink": 2
+                },
+                "infoMiddle": {
+                    "width": "100%",
+                    "justify-content": "flex-start",
+                    "flex-grow": 0,
+                    "flex-shrink": 1
+                },
+                "noneDown": {
+                    "width": "100%",
+                    "flex-grow": 2,
+                    "flex-shrink": 1
+                },
+                "mainIcon": {
+                    "width": 72,
+                    "height": 72,
+                    "border-radius": 36
+                },
+                "vName": {
+                    "font-size": 19,
+                    "color": "#ffffff",
+                    "margin-top": 24,
+                    "font-family": "PingFangSC-Regular"
+                },
+                "vDes": {
+                    "font-size":14,
+                    "color":"#ffffff",
+                    "margin-top":16,
+                    "font-family": "PingFangSC-Regular"
+                },
+                "btnWrap": {
+                    "width": "100%",
+                    "height": 44,
+                    "padding-left": 40,
+                    "padding-right": 40
+                },
+                "desBtnWrap": {
+                    "margin-top": 60
+                },
+                "desBtn": {
+                    "width": "100%",
+                    "height": "100%",
+                    "justify-content": "center",
+                    "border-radius": 4,
+                    "background-color": "#F85959",
+                    "highlighted-background-color": "#19000000"
+                },
+                "desText": {
+                    "font-size": 16,
+                    "color": "#ffffff",
+                    "margin-left": 6,
+                    "font-family": "PingFangSC-Regular"
+                },
+                "desIcon": {
+                    "width": 15,
+                    "height": 20
+                },
+                "againBtnWrap": {
+                    "margin-top": 16
+                },
+                "againBtn": {
+                    "width": "100%",
+                    "height": "100%",
+                    "justify-content": "center",
+                    "border-width": 1,
+                    "border-color": "#464646",
+                    "border-radius": 4
+                },
+                "againIcon": {
+                    "width": 15,
+                    "height": 20
+                },
+                "againText": {
+                    "font-size": 16,
+                    "color": "#ffffff",
+                    "margin-left": 6,
+                    "font-family": "PingFangSC-Regular"
+                }
+            }
+        </Style>
+        <Page>
+            <View class="wrap">
+                <View class="content flex-column">
+                    <View class="header flex-row">
+                        <Image class="quitIcon" onclick='{"event":"quit"}' style='{"image-url": "{{quitIcon}}"}'/>
+                    </View>
+                    <View class="infoWrap">
+                        <View class="noneUp"/>
+                        <View class="infoMiddle flex-column">
+                            <Image class="mainIcon" style='{"image-url":"{{mainIcon}}"}'/>
+                            <Text class="vName" style='{"text":"{{dName}}"}'/>
+                            <Text class="vDes" style='{"text":"{{dDes}}"}'/>
+                            <View class="desBtnWrap btnWrap">
+                                <View class="desBtn flex-row" onclick='{"event":"catDes"}'>
+                                    <Image class="desIcon" style='{"image-url":"{{desIcon}}"}'/>
+                                    <Text class="desText" style='{"text": "{{dBtnText}}"}'/>
+                                </View>
+                            </View>
+                            <View class="againBtnWrap btnWrap">
+                                <View class="againBtn flex-row" onclick='{"event":"replay"}'>
+                                    <Image class="againIcon" style='{"image-url":"{{againIcon}}"}'/>
+                                    <Text class="againText" style='{"text":"{{replayBtnText}}"}'/>
+                                </View>
+                            </View>
+                        </View>
+                        <View class="noneDown"/>
+                    </View>
+                </View>
+            </View>
+        </Page>
+</VanGogh>

@@ -1,0 +1,95 @@
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */,
+/* 1 */
+/***/ (function(module, exports) {
+
+module.exports = {"VanGogh":{"$":{"compatible-sdk":"1.0.0"},"BizInfo":[{"$":{"biz":"bytedance.toutiao.shortvideo","template-engine":"mustache","template-create":"UTC 2019/01/14 13:10:00"}}],"Style":[{"_":"\n            {\n                \"wrap\": {\n                    \"width\": \"100%\",\n                    \"height\": \"100%\",\n                    \"background-color\": \"#000000\",\n                    \"alpha\": 0.9\n                },\n                \"flex-column\": {\n                    \"display\": \"flex\",\n                    \"flex-direction\": \"column\",\n                    \"align-items\":\"center\"\n                },\n                \"flex-row\": {\n                    \"display\": \"flex\",\n                    \"flex-direction\": \"row\",\n                    \"align-items\": \"center\"\n                },\n                \"content\": {\n                    \"width\": \"100%\",\n                    \"justify-content\": \"flex-start\"\n                },\n                \"header\": {\n                    \"width\": \"100%\",\n                    \"height\": 44,\n                    \"flex-basis\": \"auto\",\n                    \"flex-grow\": 0,\n                    \"flex-shrink\": 0,\n                    \"justify-content\": \"flex-start\"\n                },\n                \"quitIcon\": {\n                    \"width\": 24,\n                    \"height\": 24,\n                    \"margin-left\": 15\n                },\n                \"infoWrap\": {\n                    \"width\": \"100%\",\n                    \"height\": \"100%\",\n                    \"flex-basis\": \"auto\",\n                    \"flex-grow\": 0,\n                    \"flex-shrink\": 1\n                },\n                \"noneUp\": {\n                    \"width\": \"100%\",\n                    \"flex-grow\": 1,\n                    \"flex-shrink\": 2\n                },\n                \"infoMiddle\": {\n                    \"width\": \"100%\",\n                    \"justify-content\": \"flex-start\",\n                    \"flex-grow\": 0,\n                    \"flex-shrink\": 1\n                },\n                \"noneDown\": {\n                    \"width\": \"100%\",\n                    \"flex-grow\": 2,\n                    \"flex-shrink\": 1\n                },\n                \"mainIcon\": {\n                    \"width\": 72,\n                    \"height\": 72,\n                    \"border-radius\": 36\n                },\n                \"vName\": {\n                    \"font-size\": 19,\n                    \"color\": \"#ffffff\",\n                    \"margin-top\": 24,\n                    \"font-family\": \"PingFangSC-Regular\"\n                },\n                \"vDes\": {\n                    \"font-size\":14,\n                    \"color\":\"#ffffff\",\n                    \"margin-top\":16,\n                    \"font-family\": \"PingFangSC-Regular\"\n                },\n                \"btnWrap\": {\n                    \"width\": \"100%\",\n                    \"height\": 44,\n                    \"padding-left\": 40,\n                    \"padding-right\": 40\n                },\n                \"desBtnWrap\": {\n                    \"margin-top\": 60\n                },\n                \"desBtn\": {\n                    \"width\": \"100%\",\n                    \"height\": \"100%\",\n                    \"justify-content\": \"center\",\n                    \"border-radius\": 4,\n                    \"background-color\": \"#F85959\",\n                    \"highlighted-background-color\": \"#19000000\"\n                },\n                \"desText\": {\n                    \"font-size\": 16,\n                    \"color\": \"#ffffff\",\n                    \"margin-left\": 6,\n                    \"font-family\": \"PingFangSC-Regular\"\n                },\n                \"desIcon\": {\n                    \"width\": 15,\n                    \"height\": 20\n                },\n                \"againBtnWrap\": {\n                    \"margin-top\": 16\n                },\n                \"againBtn\": {\n                    \"width\": \"100%\",\n                    \"height\": \"100%\",\n                    \"justify-content\": \"center\",\n                    \"border-width\": 1,\n                    \"border-color\": \"#464646\",\n                    \"border-radius\": 4\n                },\n                \"againIcon\": {\n                    \"width\": 15,\n                    \"height\": 20\n                },\n                \"againText\": {\n                    \"font-size\": 16,\n                    \"color\": \"#ffffff\",\n                    \"margin-left\": 6,\n                    \"font-family\": \"PingFangSC-Regular\"\n                }\n            }\n        ","$":{"type":"text/css","theme":"default"}}],"Page":[{"View":[{"$":{"class":"wrap"},"View":[{"$":{"class":"content flex-column"},"View":[{"$":{"class":"header flex-row"},"Image":[{"$":{"class":"quitIcon","onclick":"{\"event\":\"quit\"}","style":"{\"image-url\": \"{{quitIcon}}\"}"}}]},{"$":{"class":"infoWrap"},"View":[{"$":{"class":"noneUp"}},{"$":{"class":"infoMiddle flex-column"},"Image":[{"$":{"class":"mainIcon","style":"{\"image-url\":\"{{mainIcon}}\"}"}}],"Text":[{"$":{"class":"vName","style":"{\"text\":\"{{dName}}\"}"}},{"$":{"class":"vDes","style":"{\"text\":\"{{dDes}}\"}"}}],"View":[{"$":{"class":"desBtnWrap btnWrap"},"View":[{"$":{"class":"desBtn flex-row","onclick":"{\"event\":\"catDes\"}"},"Image":[{"$":{"class":"desIcon","style":"{\"image-url\":\"{{desIcon}}\"}"}}],"Text":[{"$":{"class":"desText","style":"{\"text\": \"{{dBtnText}}\"}"}}]}]},{"$":{"class":"againBtnWrap btnWrap"},"View":[{"$":{"class":"againBtn flex-row","onclick":"{\"event\":\"replay\"}"},"Image":[{"$":{"class":"againIcon","style":"{\"image-url\":\"{{againIcon}}\"}"}}],"Text":[{"$":{"class":"againText","style":"{\"text\":\"{{replayBtnText}}\"}"}}]}]}]},{"$":{"class":"noneDown"}}]}]}]}]}]}}
+
+/***/ })
+/******/ ]);
